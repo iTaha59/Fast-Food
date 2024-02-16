@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+header {
+    background-image: url("assets/bgImg.jpg");
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 900px;
+    background-color: aqua;
+}
+
+
+
+.main {
+    width: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBar {
+    display: flex;
+    width: 80%;
+    /* background-color: aqua; */
+    align-items: center;
+    margin: 100px auto 20px auto;
+}
+
+.menu-btn{
+	position: absolute;
+	top: 160px;
+	right: 100px;
+	width: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.navImg {
+    width: 20%;
+}
+
+.logoImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.navContent {
+    background-color: white;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    border-radius: 0 10px 10px 0px;
+}
+
+.navContent2 {
+    display: none !important;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    border-radius: 0 10px 10px 0px;
+}
+
+
+.navText {
+    font-weight: bold;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* background-color: coral; */
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 70px;
+}
+
+.content h3 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 30px auto;
+    font-size: 90px;
+    letter-spacing: 7px;
+}
+
+.content p {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+
+section {
+    height: 800px;
+    /* background-color: aqua; */
+}
+
+._section {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+    margin: 50px auto;
+    /* border: 1px solid black; */
+}
+
+.big_card {
+    border-radius: 15px;
+    background-image: url("assets/c_img.jpg");
+    width: 30%;
+    min-width: 20rem;
+    height: 700px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: auto; */
+}
+
+.big_card h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: lighter;
+    font-style: oblique;
+    font-size: 40px;
+}
+
+.big_card h1 {
+    font-size: 50px;
+}
+
+.c_div {
+    margin: 40px auto;
+}
+
+
+.small_cards {
+    width: 60%;
+    height: 700px;
+    display: flex;
+    /* background-color: bisque; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 50%;
+    /* background-color: pink; */
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    height: 50%;
+}
+
+.card1 {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 15px;
+    background-color: white;
+    width: 45%;
+    min-width: 20rem;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-style: oblique;
+}
+
+.cimg {
+    border-radius: 15px;
+    height: 70%;
+    /* background-color: bisque; */
+}
+
+.c_img1 {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c_title{
+    margin: auto 25px;
+}
+
+.c_content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.c_content h3 {
+    font-size: x-large;
+}
+
+.c_btn {
+    width: 120px;
+    border: none;
+    background-color: rgb(233, 48, 15);
+    color: white;
+    font-size: large;
+    border-radius: 25px;
+}
+
+.subcontent {
+    color: white;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0,0,0, 0.7);
+    /* filter: blur(8px); */
+
+}
+.m-nav-item {
+    height: 2.4rem;
+    /* width: 100%; */
+    /* filter: blur(0) !important; */
+    text-align: center;
+    font-weight: bold;
+    display: none !important;
+}
+.none {
+    display: none !important;
+}
+
+.c_div {
+    /* width: 100%; */
+    /* background-color: red; */
+    text-align: center;
+}
+
+
+@media only screen and (max-width:785px) {
+    .navContent {
+        display: none;
+    }
+    .navContent2 {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+    .moye {
+        margin: 0 10px;
+    }
+    .m-nav-item {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width:754px) {
+    .content h3{
+        text-align: left !important;
+    }
+    .navImg {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .content h3{
+        font-size: 50px;
+    }
+    .content h1{
+        font-size: 67px !important;
+    }
+    .content p{
+        font-size: 20px !important;
+    }
+    .navImg {
+        width: 30%;
+    }
+    
+}
+
+@media only screen and (max-width:1250px) {
+    ._section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .big_card {
+        /* width: 20%; */
+        background-repeat: no-repeat;
+        border: 1px solid rgba(0,0,0, 0.4);
+    }
+}
+@media only screen and (max-width:1030px) {
+    .small_cards {
+       
+        /* width: auto; */
+        /* border: 1px solid black; */
+        gap: 20px;
+    }
+    .row1{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 20px;
+    }
+    .row2{
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width:1380px) {
+    .c_content{
+        flex-direction: column;
+        align-items: center;        
+        
+    }
+    .c_title h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1031px) and (max-width: 1250px) {
+    .big_card {
+        width: 60% !important;
+        background-size: cover;
+    }
+}
